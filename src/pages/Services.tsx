@@ -138,7 +138,7 @@ const Services = () => {
             Contact us today for a personalized quote and consultation. Our experts are ready to help you find the perfect logistics solution.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#contact">
+            <a href="/contact">
               <Button size="lg" className="bg-logistics-blue hover:bg-logistics-blue/90 px-8 py-4">
                 Get Quote
               </Button>

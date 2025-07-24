@@ -75,7 +75,7 @@ const About = () => {
                   </p>
                 </div>
                 <div className="mt-8">
-                  <a href="#contact">
+                  <a href="/contact">
                     <Button size="lg" className="bg-logistics-blue hover:bg-logistics-blue/90 px-8 py-4">
                       Get Started Today
                     </Button>
@@ -231,13 +231,13 @@ const About = () => {
             Join thousands of satisfied customers who trust Tenta Logistics for their shipping needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#contact">
+            <a href="/contact">
               <Button size="lg" className="bg-logistics-blue hover:bg-logistics-blue/90 px-8 py-4">
                 Get Started
               </Button>
             </a>
             <a href="/services">
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-logistics-dark px-8 py-4">
+              <Button variant="outline" size="lg" className="border-white text-logistics-dark bg-white hover:bg-logistics-dark hover:text-white px-8 py-4">
                 View Services
               </Button>
             </a>

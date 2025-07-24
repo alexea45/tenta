@@ -264,7 +264,7 @@ const Calculate = () => {
             For complex shipments or special requirements, our experts can provide a personalized quote tailored to your needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#contact">
+            <a href="/contact">
               <Button size="lg" className="bg-logistics-blue hover:bg-logistics-blue/90 px-8 py-4">
                 Contact Expert
               </Button>

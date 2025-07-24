@@ -24,7 +24,7 @@ export const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="#contact">
+            <a href="/contact">
               <Button 
                 size="lg" 
                 className="bg-logistics-green hover:bg-logistics-green/90 text-white px-8 py-4 text-lg font-semibold"
@@ -35,7 +35,7 @@ export const Hero = () => {
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-white text-white hover:bg-white hover:text-logistics-dark px-8 py-4 text-lg font-semibold flex items-center gap-2"
+              className="border-white text-logistics-dark bg-white hover:bg-logistics-dark hover:text-white px-8 py-4 text-lg font-semibold flex items-center gap-2"
             >
               <Play size={20} />
               Watch Video

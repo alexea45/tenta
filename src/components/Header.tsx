@@ -28,10 +28,10 @@ export const Header = () => {
       <nav className="bg-white shadow-md py-4 px-4">
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo */}
-          <div className="text-2xl font-bold text-logistics-dark">
+          <a href="/" className="text-2xl font-bold text-logistics-dark hover:opacity-80 transition-opacity cursor-pointer">
             <span className="text-logistics-blue">Tenta</span>
             <span className="text-logistics-green">Logistics</span>
-          </div>
+          </a>
 
           {/* Navigation Links */}
           <div className="hidden md:flex items-center gap-8">
@@ -44,13 +44,8 @@ export const Header = () => {
             <a href="/calculate" className="text-gray-700 hover:text-logistics-blue transition-colors font-medium">
               Calculate Shipping
             </a>
-            <a href="#contact" className="text-gray-700 hover:text-logistics-blue transition-colors font-medium">
+            <a href="/contact" className="text-gray-700 hover:text-logistics-blue transition-colors font-medium">
               Contact Us
-            </a>
-            <a href="/login">
-              <Button variant="default" className="bg-logistics-blue hover:bg-logistics-blue/90">
-                Login
-              </Button>
             </a>
           </div>
 

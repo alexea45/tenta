@@ -69,7 +69,7 @@ const Tracking = () => {
                 </div>
                 <div className="text-center">
                   <p className="text-sm text-gray-600">
-                    Don't have a tracking number? <a href="#contact" className="text-logistics-blue hover:underline">Contact us</a>
+                    Don't have a tracking number? <a href="/contact" className="text-logistics-blue hover:underline">Contact us</a>
                   </p>
                 </div>
               </CardContent>
@@ -180,7 +180,7 @@ const Tracking = () => {
             Our customer support team is available 24/7 to assist you with any tracking inquiries.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#contact">
+            <a href="/contact">
               <Button size="lg" className="bg-logistics-blue hover:bg-logistics-blue/90 px-8 py-4">
                 Contact Support
               </Button>
