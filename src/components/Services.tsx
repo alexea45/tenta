@@ -49,7 +49,7 @@ export const Services = () => {
             What We Offer
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Global Logistics provides a wide array of services tailored to meet the diverse needs 
+            Tenta Logistics provides a wide array of services tailored to meet the diverse needs 
             of both car wholesalers and retailers. Whether you're looking for solutions in logistics, 
             transportation, or supply chain management, we have you covered.
           </p>
@@ -58,11 +58,12 @@ export const Services = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => {
             const Icon = service.icon;
+            const serviceSlug = service.title.toLowerCase().replace(' ', '-');
             return (
-              <Card 
-                key={index} 
-                className="group cursor-pointer hover:shadow-xl transition-all duration-300 border-0 bg-gradient-card overflow-hidden"
-              >
+              <a href={`/services/${serviceSlug}`} key={index}>
+                <Card 
+                  className="group cursor-pointer hover:shadow-xl transition-all duration-300 border-0 bg-gradient-card overflow-hidden"
+                >
                 <div className="relative overflow-hidden">
                   <img 
                     src={service.image} 
@@ -87,6 +88,7 @@ export const Services = () => {
                   </CardDescription>
                 </CardContent>
               </Card>
+            </a>
             );
           })}
         </div>
