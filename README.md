@@ -1,73 +1,78 @@
-# Welcome to your Lovable project
+# Tenta Logistics Landing Page
 
-## Project info
+## Project Description
 
-**URL**: https://lovable.dev/projects/4660fa3b-1c86-4f13-b3d6-aee0583ae182
+A professional logistics landing page for Tenta Logistics, providing comprehensive shipping and transportation services worldwide. The site features modern design, responsive layout, and user-friendly navigation.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- **Clickable Logo**: TentaLogistics logo navigates to home page
+- **Service Pages**: Detailed pages for all services (Towing, Loading, Shipping, Global Logistics, Auto Transport, Insurance)
+- **Contact Page**: Dedicated contact page with form and company information
+- **Responsive Design**: Mobile-friendly layout that works on all devices
+- **Professional UI**: Clean, modern design with logistics branding
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/4660fa3b-1c86-4f13-b3d6-aee0583ae182) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## How to run this project
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
 Follow these steps:
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Step 1: Clone the repository
+git clone https://github.com/alexea45/tenta.git
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Step 2: Navigate to the project directory
+cd tenta
 
-# Step 3: Install the necessary dependencies.
+# Step 3: Install the necessary dependencies
 npm i
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
+## Technologies Used
 
 This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Vite** - Fast build tool and dev server
+- **TypeScript** - Type-safe JavaScript
+- **React** - UI framework
+- **shadcn/ui** - Component library
+- **Tailwind CSS** - Utility-first CSS framework
+- **React Router** - Client-side routing
+- **Lucide React** - Icons
 
-## How can I deploy this project?
+## Project Structure
 
-Simply open [Lovable](https://lovable.dev/projects/4660fa3b-1c86-4f13-b3d6-aee0583ae182) and click on Share -> Publish.
+```
+src/
+├── components/          # Reusable UI components
+│   ├── Header.tsx      # Navigation header
+│   ├── Hero.tsx        # Hero section
+│   ├── Contact.tsx     # Contact form component
+│   └── Footer.tsx      # Site footer
+├── pages/              # Page components
+│   ├── Index.tsx       # Home page
+│   ├── About.tsx       # About page
+│   ├── Services.tsx    # Services overview
+│   ├── Contact.tsx     # Contact page
+│   └── services/       # Individual service pages
+└── lib/                # Utility functions
+```
 
-## Can I connect a custom domain to my Lovable project?
+## Available Scripts
 
-Yes, you can!
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run lint` - Run ESLint
+- `npm run preview` - Preview production build
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Deployment
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Build the project and deploy the `dist` folder to your preferred hosting platform.
+
+```sh
+npm run build
+```
