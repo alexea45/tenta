@@ -1,66 +1,50 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Truck, Package, Ship, Globe, Car, Shield } from "lucide-react";
+import { Gavel, Car, Ship, ArrowRight } from "lucide-react";
 
 export const Services = () => {
   const services = [
     {
-      icon: Truck,
-      title: "Towing Services",
-      description: "We pride ourselves in providing the best dispatch service with the least amount of wait time.",
-      image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=400&h=250&fit=crop&crop=center"
+      icon: Gavel,
+      title: "Bidding Services",
+      description: "We bid on your dream car from US and Canada auctions, handling the entire process for you.",
+      features: ["Access to Major Auctions", "Proxy Bidding", "Inspection Services"],
+      image: "https://images.unsplash.com/photo-1616422285623-13ff0162193c?w=600&h=400&fit=crop&crop=center",
+      slug: "bidding"
     },
     {
-      icon: Package,
-      title: "Loading Services", 
-      description: "Having multiple protection layers from utilizing best materials, we ensure that you have peace of mind of your shipment.",
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&h=250&fit=crop&crop=center"
+      icon: Car,
+      title: "Buying Services",
+      description: "Purchase your dream car from US and Canada dealerships at affordable rates.",
+      features: ["Nationwide Dealership Network", "Price Negotiation", "Secure Payments"],
+      image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600&h=400&fit=crop&crop=center",
+      slug: "buying"
     },
     {
       icon: Ship,
       title: "Shipping Services",
-      description: "Our extensive network provides reliable shipping solutions across all major international routes.",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=250&fit=crop&crop=center"
-    },
-    {
-      icon: Globe,
-      title: "Global Logistics",
-      description: "End-to-end logistics solutions connecting businesses worldwide with efficient supply chain management.",
-      image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400&h=250&fit=crop&crop=center"
-    },
-    {
-      icon: Car,
-      title: "Auto Transport",
-      description: "Specialized vehicle transportation services for cars, motorcycles, and commercial vehicles.",
-      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=250&fit=crop&crop=center"
-    },
-    {
-      icon: Shield,
-      title: "Insurance & Protection",
-      description: "Comprehensive insurance coverage and protection plans for all your valuable shipments.",
-      image: "https://images.unsplash.com/photo-1605379399642-870262d3d051?w=400&h=250&fit=crop&crop=center"
+      description: "Trusted A-Z shipping services to transport your car from the US or Canada to the UAE safely and securely.",
+      features: ["Towing and Transport", "Ocean Freight", "Customs Clearance"],
+      image: "https://www.savinodelbene.com/wp-content/uploads/2023/10/ocean-freight-shipping.png",
+      slug: "shipping"
     }
   ];
 
   return (
-    <section id="services" className="py-20 bg-white">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-logistics-dark mb-4">
             What We Offer
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Tenta Logistics provides a wide array of services tailored to meet the diverse needs 
-            of both car wholesalers and retailers. Whether you're looking for solutions in logistics, 
-            transportation, or supply chain management, we have you covered.
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            A seamless, end-to-end car buying and shipping experience.
           </p>
         </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {services.map((service, index) => {
             const Icon = service.icon;
-            const serviceSlug = service.title.toLowerCase().replace(' ', '-');
             return (
-              <a href={`/services/${serviceSlug}`} key={index}>
+              <a href={`/services/${service.slug}`} key={index}>
                 <Card 
                   className="group cursor-pointer hover:shadow-xl transition-all duration-300 border-0 bg-gradient-card overflow-hidden"
                 >
@@ -82,10 +66,18 @@ export const Services = () => {
                     {service.title}
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="space-y-4">
                   <CardDescription className="text-gray-600 leading-relaxed">
                     {service.description}
                   </CardDescription>
+                  <ul className="space-y-2">
+                    {service.features.slice(0, 3).map((feature, idx) => (
+                      <li key={idx} className="flex items-center gap-2 text-sm text-gray-600">
+                        <ArrowRight size={16} className="text-logistics-green" />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
                 </CardContent>
               </Card>
             </a>

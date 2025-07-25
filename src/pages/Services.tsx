@@ -2,63 +2,36 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Truck, Package, Ship, Globe, Car, Shield, ArrowRight } from "lucide-react";
+import { Gavel, Car, Ship, ArrowRight } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
-      icon: Truck,
-      title: "Towing Services",
-      description: "We pride ourselves in providing the best dispatch service with the least amount of wait time.",
-      fullDescription: "Our professional towing services ensure your vehicles are safely transported from auction sites to our secure facilities. With a network of certified drivers and state-of-the-art equipment, we guarantee minimal wait times and maximum care for your investment.",
-      features: ["24/7 Dispatch Service", "GPS Tracking", "Certified Professional Drivers", "Damage-Free Guarantee"],
-      image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&h=400&fit=crop&crop=center",
-      slug: "towing-services"
+      icon: Gavel,
+      title: "Bidding Services",
+      description: "We bid on your dream car from US and Canada auctions, handling the entire process for you.",
+      fullDescription: "Our professional bidding services give you access to the largest car auctions in the US and Canada. We handle the bidding process, paperwork, and logistics, ensuring you get the best price for your dream car.",
+      features: ["Access to Major Auctions", "Proxy Bidding", "Inspection Services", "Paperwork Handling"],
+      image: "https://images.unsplash.com/photo-1616422285623-13ff0162193c?w=600&h=400&fit=crop&crop=center",
+      slug: "bidding"
     },
     {
-      icon: Package,
-      title: "Loading Services", 
-      description: "Having multiple protection layers from utilizing best materials, we ensure that you have peace of mind of your shipment.",
-      fullDescription: "Our expert loading services use industry-leading materials and techniques to protect your cargo during transit. Multiple layers of protection ensure your items arrive in perfect condition.",
-      features: ["Multi-Layer Protection", "Professional Packing", "Fragile Item Handling", "Climate Control"],
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&h=400&fit=crop&crop=center",
-      slug: "loading-services"
+      icon: Car,
+      title: "Buying Services",
+      description: "Purchase your dream car from US and Canada dealerships at affordable rates.",
+      fullDescription: "Our buying services help you find and purchase your dream car from dealerships across the US and Canada. We negotiate the best price, handle the paperwork, and arrange for transportation to our facility.",
+      features: ["Nationwide Dealership Network", "Price Negotiation", "Secure Payments", "Vehicle History Reports"],
+      image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600&h=400&fit=crop&crop=center",
+      slug: "buying"
     },
     {
       icon: Ship,
       title: "Shipping Services",
-      description: "Our extensive network provides reliable shipping solutions across all major international routes.",
-      fullDescription: "From container shipping to express delivery, our comprehensive shipping services connect your business to global markets with reliable, cost-effective solutions.",
-      features: ["Global Network", "Container & LCL Options", "Express Delivery", "Real-time Tracking"],
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=400&fit=crop&crop=center",
-      slug: "shipping-services"
-    },
-    {
-      icon: Globe,
-      title: "Global Logistics",
-      description: "End-to-end logistics solutions connecting businesses worldwide with efficient supply chain management.",
-      fullDescription: "Our global logistics solutions streamline your supply chain with comprehensive services from origin to destination, including customs clearance, warehousing, and distribution.",
-      features: ["Supply Chain Management", "Customs Clearance", "Warehousing", "Distribution Network"],
-      image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=600&h=400&fit=crop&crop=center",
-      slug: "global-logistics"
-    },
-    {
-      icon: Car,
-      title: "Auto Transport",
-      description: "Specialized vehicle transportation services for cars, motorcycles, and commercial vehicles.",
-      fullDescription: "Specializing in auto transport from US auctions to worldwide destinations. We handle everything from luxury cars to commercial vehicles with the utmost care and professionalism.",
-      features: ["Auction Pickup", "Door-to-Door Service", "Enclosed Transport", "Vehicle Inspection"],
-      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&h=400&fit=crop&crop=center",
-      slug: "auto-transport"
-    },
-    {
-      icon: Shield,
-      title: "Insurance & Protection",
-      description: "Protect your valuable shipments with our comprehensive cargo insurance. Contact us for a customized rate.",
-      fullDescription: "Protect your investments with our comprehensive insurance plans. We offer full coverage options tailored to the value and type of your cargo.",
-      features: ["Full Coverage Plans", "Claims Processing", "Risk Assessment", "24/7 Support"],
-      image: "https://images.unsplash.com/photo-1605379399642-870262d3d051?w=600&h=400&fit=crop&crop=center",
-      slug: "insurance-protection"
+      description: "Trusted A-Z shipping services to transport your car from the US or Canada to the UAE safely and securely.",
+      fullDescription: "Our A-Z shipping services cover everything from towing your car from the auction or dealership to freight and delivery in the UAE. We handle all logistics, customs, and paperwork to ensure a smooth and secure process.",
+      features: ["Towing and Transport", "Ocean Freight", "Customs Clearance", "Door-to-Door Delivery"],
+      image: "https://www.savinodelbene.com/wp-content/uploads/2023/10/ocean-freight-shipping.png",
+      slug: "shipping"
     }
   ];
 
@@ -71,8 +44,8 @@ const Services = () => {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-6">Our Services</h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-            Comprehensive logistics solutions tailored to meet your specific needs. 
-            From vehicle transport to global shipping, we've got you covered.
+            Your trusted partner for buying and shipping cars from the US to Dubai. 
+            We handle everything from bidding at auctions to delivering your car to your doorstep.
           </p>
         </div>
       </section>
@@ -135,7 +108,7 @@ const Services = () => {
             Ready to Get Started?
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Contact us today for a personalized quote and consultation. Our experts are ready to help you find the perfect logistics solution.
+            Contact us today for a personalized quote and consultation. Our experts are ready to help you find and ship your dream car.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/contact">
