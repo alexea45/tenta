@@ -54,7 +54,7 @@ const Services = () => {
     {
       icon: Shield,
       title: "Insurance & Protection",
-      description: "Comprehensive insurance coverage and protection plans for all your valuable shipments.",
+      description: "Protect your valuable shipments with our comprehensive cargo insurance. Contact us for a customized rate.",
       fullDescription: "Protect your investments with our comprehensive insurance plans. We offer full coverage options tailored to the value and type of your cargo.",
       features: ["Full Coverage Plans", "Claims Processing", "Risk Assessment", "24/7 Support"],
       image: "https://images.unsplash.com/photo-1605379399642-870262d3d051?w=600&h=400&fit=crop&crop=center",

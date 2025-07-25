@@ -1,11 +1,11 @@
 export const TrustedPartners = () => {
   const partners = [
-    { name: "Copart", logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&h=100&fit=crop&crop=center" },
-    { name: "IAAI", logo: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=200&h=100&fit=crop&crop=center" },
-    { name: "Manheim", logo: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=200&h=100&fit=crop&crop=center" },
-    { name: "Maersk", logo: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=200&h=100&fit=crop&crop=center" },
-    { name: "MSC", logo: "https://images.unsplash.com/photo-1605379399642-870262d3d051?w=200&h=100&fit=crop&crop=center" },
-    { name: "Hapag-Lloyd", logo: "https://images.unsplash.com/photo-1566041510394-cf7c8fe21800?w=200&h=100&fit=crop&crop=center" },
+    { name: "Ocean Network Express", logo: "https://logo.clearbit.com/one-line.com" },
+    { name: "MSC", logo: "https://logo.clearbit.com/msc.com" },
+    { name: "Hapag-Lloyd", logo: "https://logo.clearbit.com/hapag-lloyd.com" },
+    { name: "Safmarine", logo: "https://logo.clearbit.com/safmarine.com" },
+    { name: "APL", logo: "https://logo.clearbit.com/apl.com" },
+    { name: "Maersk", logo: "https://logo.clearbit.com/maersk.com" },
   ];
 
   return (
@@ -16,14 +16,14 @@ export const TrustedPartners = () => {
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center mt-12">
           {partners.map((partner, index) => (
-            <div 
-              key={index} 
-              className="group bg-white rounded-lg p-6 shadow-card hover:shadow-lg transition-all duration-300 w-full max-w-[180px] flex items-center justify-center"
+            <div
+              key={index}
+              className="flex items-center justify-center"
             >
-              <img 
-                src={partner.logo} 
+              <img
+                src={partner.logo}
                 alt={partner.name}
-                className="max-h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                className="max-h-16 w-auto object-contain"
               />
             </div>
           ))}
