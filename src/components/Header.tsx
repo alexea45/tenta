@@ -19,7 +19,7 @@ export const Header = () => {
           </div>
           <div className="flex items-center gap-4">
             <Globe size={16} />
-            <span>Global Shipping Solutions</span>
+            <span>Global Freight Solutions</span>
           </div>
         </div>
       </div>
