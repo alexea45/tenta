@@ -54,8 +54,8 @@ export const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-logistics-dark mb-2">Phone</h3>
-                    <p className="text-gray-600">+1 (234) 567-890</p>
-                    <p className="text-gray-600">+1 (832) 529-9283</p>
+                    <p className="text-gray-600">+1 (626) 600 - 8699 (USA)</p>
+                    <p className="text-gray-600">XXXXXXXXXX (UAE)</p>
                   </div>
                 </div>
               </CardContent>
@@ -69,8 +69,8 @@ export const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-logistics-dark mb-2">Email</h3>
-                    <p className="text-gray-600">support@logistics.com</p>
-                    <p className="text-gray-600">info@logistics.com</p>
+                    <p className="text-gray-600">info@tentallc.com</p>
+                    <p className="text-gray-600">support@tentallc.com</p>
                   </div>
                 </div>
               </CardContent>
@@ -84,8 +84,8 @@ export const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-logistics-dark mb-2">Address</h3>
-                    <p className="text-gray-600">123 Logistics Boulevard</p>
-                    <p className="text-gray-600">Houston, TX 77001, USA</p>
+                    <p className="text-gray-600">855 Alpha St.</p>
+                    <p className="text-gray-600">Irwindale, CA 91010</p>
                   </div>
                 </div>
               </CardContent>
@@ -100,7 +100,6 @@ export const Contact = () => {
                   <div>
                     <h3 className="text-lg font-semibold text-logistics-dark mb-2">Business Hours</h3>
                     <p className="text-gray-600">Monday - Friday: 8:00 AM - 6:00 PM</p>
-                    <p className="text-gray-600">Saturday: 9:00 AM - 4:00 PM</p>
                   </div>
                 </div>
               </CardContent>
