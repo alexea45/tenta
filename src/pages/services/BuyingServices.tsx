@@ -51,7 +51,7 @@ const BuyingServices = () => {
             </div>
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop&crop=center"
+                src="https://hips.hearstapps.com/hmg-prod/images/classicconvertibles-1614973682.jpg"
                 alt="Buying a car from a dealership"
                 className="rounded-lg shadow-lg"
               />

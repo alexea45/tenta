@@ -35,7 +35,7 @@ const BiddingServices = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1568605117036-5fe5e7185743?w=800&h=600&fit=crop&crop=center"
+                src="https://images.unsplash.com/photo-1616422285623-13ff0162193c?w=800&h=600&fit=crop&crop=center"
                 alt="Bidding on a car at an auction"
                 className="rounded-lg shadow-lg"
               />

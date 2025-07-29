@@ -21,7 +21,7 @@ const Services = () => {
       description: "Purchase your dream car from US and Canada dealerships at affordable rates.",
       fullDescription: "Our buying services help you find and purchase your dream car from dealerships across the US and Canada. We negotiate the best price, handle the paperwork, and arrange for transportation to our facility.",
       features: ["Nationwide Dealership Network", "Price Negotiation", "Secure Payments", "Vehicle History Reports"],
-      image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600&h=400&fit=crop&crop=center",
+      image: "https://hips.hearstapps.com/hmg-prod/images/classicconvertibles-1614973682.jpg",
       slug: "buying"
     },
     {
