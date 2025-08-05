@@ -55,7 +55,7 @@ export const Contact = () => {
                   <div>
                     <h3 className="text-lg font-semibold text-logistics-dark mb-2">Phone</h3>
                     <p className="text-gray-600">+1 (626) 600 - 8699 (USA)</p>
-                    <p className="text-gray-600">XXXXXXXXXX (UAE)</p>
+                    <p className="text-gray-600">0547818558 (UAE)</p>
                   </div>
                 </div>
               </CardContent>

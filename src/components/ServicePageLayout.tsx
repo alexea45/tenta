@@ -3,6 +3,12 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, LucideIcon } from "lucide-react";
 
+interface Logo {
+  src: string;
+  alt: string;
+  href: string;
+}
+
 interface ServicePageLayoutProps {
   icon: LucideIcon;
   heroTitle: string;
@@ -14,6 +20,7 @@ interface ServicePageLayoutProps {
   imageAlt: string;
   ctaTitle: string;
   ctaSubtitle: string;
+  logos?: Logo[];
 }
 
 export const ServicePageLayout = ({
@@ -27,6 +34,7 @@ export const ServicePageLayout = ({
   imageAlt,
   ctaTitle,
   ctaSubtitle,
+  logos,
 }: ServicePageLayoutProps) => {
   return (
     <div className="min-h-screen">
@@ -73,6 +81,20 @@ export const ServicePageLayout = ({
               />
             </div>
           </div>
+          {logos && (
+            <div className="mt-16">
+              <h3 className="text-2xl font-bold text-center text-logistics-dark mb-8">
+                Platforms We Support
+              </h3>
+              <div className="flex justify-center items-center gap-12">
+                {logos.map((logo, index) => (
+                  <a href={logo.href} target="_blank" rel="noopener noreferrer" key={index}>
+                    <img src={logo.src} alt={logo.alt} className="h-12 w-auto" />
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </section>
 
