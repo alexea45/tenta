@@ -10,19 +10,16 @@ export const Hero = () => {
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(${heroImage})` 
       }}
     >
-      <div className="container mx-auto px-4 z-10">
-        <div className="max-w-2xl text-white">
-          <p className="text-lg mb-4 text-logistics-blue font-semibold">
-            You Buy in America, We Ship to the Middle East
-          </p>
+      <div className="container mx-auto px-4 z-10 text-center">
+        <div className="max-w-4xl mx-auto text-white">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-            From U.S. auctions to your driveway - we handle everything
+            <span className="whitespace-nowrap">From U.S. auctions to the Middle East</span> <br /> We Handle Everything
           </h1>
           <p className="text-xl mb-8 text-gray-200 leading-relaxed">
             Tenta Logistics helps customers across the Middle East purchase vehicles from U.S. auctions and delivers them directly to your country. We manage the entire process: bidding, paperwork, shipping, and import clearance so you don’t have to.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex justify-center">
             <a href="/contact">
               <Button 
                 size="lg" 
@@ -31,14 +28,6 @@ export const Hero = () => {
                 Get Started
               </Button>
             </a>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="border-white text-logistics-dark bg-white hover:bg-logistics-dark hover:text-white px-8 py-4 text-lg font-semibold flex items-center gap-2"
-            >
-              <Play size={20} />
-              Watch Video
-            </Button>
           </div>
         </div>
       </div>
