@@ -1,5 +1,12 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Gavel, Car, Ship, ArrowRight } from "lucide-react";
+import { Button } from "./ui/button";
 
 export const Services = () => {
   const services = [
@@ -45,44 +52,58 @@ export const Services = () => {
             const Icon = service.icon;
             return (
               <a href={`/services/${service.slug}`} key={index}>
-                <Card 
-                  className="group cursor-pointer hover:shadow-xl transition-all duration-300 border-0 bg-gradient-card overflow-hidden"
-                >
-                <div className="relative overflow-hidden">
-                  <img 
-                    src={service.image} 
-                    alt={service.title}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                  <div className="absolute bottom-4 left-4">
-                    <div className="bg-logistics-blue p-3 rounded-full">
-                      <Icon className="h-6 w-6 text-white" />
+                <Card className="group cursor-pointer hover:shadow-xl transition-all duration-300 border-0 bg-gradient-card overflow-hidden h-full">
+                  <div className="relative overflow-hidden">
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                    <div className="absolute bottom-4 left-4">
+                      <div className="bg-logistics-blue p-3 rounded-full">
+                        <Icon className="h-6 w-6 text-white" />
+                      </div>
                     </div>
                   </div>
-                </div>
-                <CardHeader>
-                  <CardTitle className="text-xl text-logistics-dark group-hover:text-logistics-blue transition-colors">
-                    {service.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <CardDescription className="text-gray-600 leading-relaxed">
-                    {service.description}
-                  </CardDescription>
-                  <ul className="space-y-2">
-                    {service.features.slice(0, 3).map((feature, idx) => (
-                      <li key={idx} className="flex items-center gap-2 text-sm text-gray-600">
-                        <ArrowRight size={16} className="text-logistics-green" />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-            </a>
+                  <CardHeader>
+                    <CardTitle className="text-xl text-logistics-dark group-hover:text-logistics-blue transition-colors">
+                      {service.title}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <CardDescription className="text-gray-600 leading-relaxed">
+                      {service.description}
+                    </CardDescription>
+                    <ul className="space-y-2">
+                      {service.features.slice(0, 3).map((feature, idx) => (
+                        <li
+                          key={idx}
+                          className="flex items-center gap-2 text-sm text-gray-600"
+                        >
+                          <ArrowRight
+                            size={16}
+                            className="text-logistics-green"
+                          />
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              </a>
             );
           })}
+        </div>
+        <div className="text-center mt-16">
+          <a href="/services">
+            <Button
+              size="lg"
+              className="bg-logistics-blue hover:bg-logistics-blue/90 text-white px-8 py-4 text-lg font-semibold"
+            >
+              View All Services
+            </Button>
+          </a>
         </div>
       </div>
     </section>

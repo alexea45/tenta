@@ -15,6 +15,12 @@ import NotFound from "./pages/NotFound";
 import BiddingServices from "./pages/services/BiddingServices";
 import BuyingServices from "./pages/services/BuyingServices";
 import ShippingServices from "./pages/services/ShippingServices";
+import AuctionAccount from "./pages/services/AuctionAccount";
+import Towing from "./pages/services/Towing";
+import Loading from "./pages/services/Loading";
+import Clearance from "./pages/services/Clearance";
+import Booking from "./pages/services/Booking";
+import HalfCut from "./pages/services/HalfCut";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +42,12 @@ const App = () => (
           <Route path="/services/bidding" element={<BiddingServices />} />
           <Route path="/services/buying" element={<BuyingServices />} />
           <Route path="/services/shipping" element={<ShippingServices />} />
+          <Route path="/services/auction-account" element={<AuctionAccount />} />
+          <Route path="/services/towing" element={<Towing />} />
+          <Route path="/services/loading" element={<Loading />} />
+          <Route path="/services/clearance" element={<Clearance />} />
+          <Route path="/services/booking" element={<Booking />} />
+          <Route path="/services/half-cut" element={<HalfCut />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

@@ -1,38 +1,136 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Gavel, Car, Ship, ArrowRight } from "lucide-react";
+import {
+  Gavel,
+  Car,
+  Ship,
+  ArrowRight,
+  Truck,
+  Upload,
+  BadgeCheck,
+  CalendarClock,
+  Scissors,
+} from "lucide-react";
 
 const Services = () => {
   const services = [
     {
       icon: Gavel,
       title: "Bidding Services",
-      description: "We bid on your dream car from US and Canada auctions, handling the entire process for you.",
-      fullDescription: "Our professional bidding services give you access to the largest car auctions in the US and Canada. We handle the bidding process, paperwork, and logistics, ensuring you get the best price for your dream car.",
-      features: ["Access to Major Auctions", "Proxy Bidding", "Inspection Services", "Paperwork Handling"],
-      image: "https://images.unsplash.com/photo-1616422285623-13ff0162193c?w=600&h=400&fit=crop&crop=center",
-      slug: "bidding"
+      description:
+        "We bid on your dream car from US and Canada auctions, handling the entire process for you.",
+      fullDescription:
+        "Our professional bidding services give you access to the largest car auctions in the US and Canada. We handle the bidding process, paperwork, and logistics, ensuring you get the best price for your dream car.",
+      features: [
+        "Access to Major Auctions",
+        "Proxy Bidding",
+        "Inspection Services",
+        "Paperwork Handling",
+      ],
+      image:
+        "https://images.unsplash.com/photo-1616422285623-13ff0162193c?w=600&h=400&fit=crop&crop=center",
+      slug: "bidding",
     },
     {
       icon: Car,
       title: "Buying Services",
-      description: "Purchase your dream car from US and Canada dealerships at affordable rates.",
-      fullDescription: "Our buying services help you find and purchase your dream car from dealerships across the US and Canada. We negotiate the best price, handle the paperwork, and arrange for transportation to our facility.",
-      features: ["Nationwide Dealership Network", "Price Negotiation", "Secure Payments", "Vehicle History Reports"],
-      image: "https://hips.hearstapps.com/hmg-prod/images/classicconvertibles-1614973682.jpg",
-      slug: "buying"
+      description:
+        "Purchase your dream car from US and Canada dealerships at affordable rates.",
+      fullDescription:
+        "Our buying services help you find and purchase your dream car from dealerships across the US and Canada. We negotiate the best price, handle the paperwork, and arrange for transportation to our facility.",
+      features: [
+        "Nationwide Dealership Network",
+        "Price Negotiation",
+        "Secure Payments",
+        "Vehicle History Reports",
+      ],
+      image:
+        "https://hips.hearstapps.com/hmg-prod/images/classicconvertibles-1614973682.jpg",
+      slug: "buying",
     },
     {
       icon: Ship,
       title: "Shipping Services",
-      description: "Trusted A-Z shipping services to transport your car from the US or Canada to the UAE safely and securely.",
-      fullDescription: "Our A-Z shipping services cover everything from towing your car from the auction or dealership to freight and delivery in the UAE. We handle all logistics, customs, and paperwork to ensure a smooth and secure process.",
-      features: ["Towing and Transport", "Ocean Freight", "Customs Clearance", "Door-to-Door Delivery"],
-      image: "https://www.savinodelbene.com/wp-content/uploads/2023/10/ocean-freight-shipping.png",
-      slug: "shipping"
-    }
+      description:
+        "Trusted A-Z shipping services to transport your car from the US or Canada to the UAE safely and securely.",
+      fullDescription:
+        "Our A-Z shipping services cover everything from towing your car from the auction or dealership to freight and delivery in the UAE. We handle all logistics, customs, and paperwork to ensure a smooth and secure process.",
+      features: [
+        "Towing and Transport",
+        "Ocean Freight",
+        "Customs Clearance",
+        "Door-to-Door Delivery",
+      ],
+      image:
+        "https://www.savinodelbene.com/wp-content/uploads/2023/10/ocean-freight-shipping.png",
+      slug: "shipping",
+    },
+    {
+      icon: Gavel,
+      title: "Auction Account Services",
+      description:
+        "We help you set up, verify, and fund your Copart, IAAI, and Manheim accounts so you’re ready to bid instantly.",
+      features: [
+        "Account setup & verification",
+        "Deposit guidance",
+        "Login support",
+      ],
+      image: "https://file3.autolookout.net/35074/029544/4929/Ow==/autonation-auto-auction-los-angeles-2.jpg",
+      slug: "auction-account",
+    },
+    {
+      icon: Truck,
+      title: "Towing Services",
+      description:
+        "We arrange vehicle pickup from auction yards and transport to warehouses or ports.",
+      features: ["Local auction towing", "Port drop-off", "Fast turnaround time"],
+      image: "https://www.montebellotowing.us/_next/image?url=https%3A%2F%2Fmontebellotowing.us%2Fapi%2Fimages%2F5a13b07c116c872d-18fc65a337d4535a5493fa110f738df8.jpg&w=3840&q=75",
+      slug: "towing",
+    },
+    {
+      icon: Upload,
+      title: "Loading Services",
+      description:
+        "We safely load your vehicles into containers or onto RORO vessels for secure international shipping.",
+      features: ["Forklift/container handling", "Loading photos", "Damage prevention"],
+      image: "https://blog.trans-rak.com/hs-fs/hubfs/IMG_8389.jpg?width=4032&name=IMG_8389.jpg",
+      slug: "loading",
+    },
+    {
+      icon: BadgeCheck,
+      title: "Clearance Services",
+      description:
+        "We handle customs clearance at destination ports so your car is released without issues.",
+      features: ["Import docs", "Port coordination", "Duties/taxes guidance"],
+      image: "https://ship4wd.com/wp-content/uploads/Customs-Clearance-Delay-6-Reasons-and-Solutions-Explained.webp",
+      slug: "clearance",
+    },
+    {
+      icon: CalendarClock,
+      title: "Booking Services",
+      description:
+        "We book your vehicle space on the fastest, most cost-effective shipping routes.",
+      features: ["Weekly sailings", "Port-to-port scheduling", "ETA notifications"],
+      image: "https://www.bookitlive.net/content/wp-content/uploads/2021/03/How-does-booking-system-work.jpg",
+      slug: "booking",
+    },
+    {
+      icon: Scissors,
+      title: "Half-Cut Services",
+      description:
+        "We dismantle vehicles professionally to ship them as parts and save on import taxes.",
+      features: ["Engine separation", "Body disassembly", "Export prep"],
+      image: "https://carpart.com.au/uploads/blog/354299/half-cut-cars-1671004607.jpeg",
+      slug: "half-cut",
+    },
   ];
 
   return (

@@ -1,6 +1,18 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, Globe } from "lucide-react";
 
+const services = [
+  { name: "Auction Account Services", href: "/services/auction-account" },
+  { name: "Towing Services", href: "/services/towing" },
+  { name: "Loading Services", href: "/services/loading" },
+  { name: "Shipping Services", href: "/services/shipping" },
+  { name: "Clearance Services", href: "/services/clearance" },
+  { name: "Booking Services", href: "/services/booking" },
+  { name: "Half-Cut Services", href: "/services/half-cut" },
+  { name: "Title Services", href: "/services/title" },
+  { name: "Bidding Services", href: "/services/bidding" },
+];
+
 export const Header = () => {
   return (
     <header className="w-full">
@@ -35,9 +47,22 @@ export const Header = () => {
 
           {/* Navigation Links */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="/services" className="text-gray-700 hover:text-logistics-blue transition-colors font-medium">
-              Services
-            </a>
+            <div className="relative group">
+              <a href="/services" className="text-gray-700 hover:text-logistics-blue transition-colors font-medium py-4">
+                Services
+              </a>
+              <div className="absolute left-1/2 -translate-x-1/2 top-full z-50 hidden w-max bg-white border rounded-md shadow-lg group-hover:block">
+                <ul className="flex flex-col text-sm text-gray-800 py-2">
+                  {services.map((service) => (
+                    <li key={service.name}>
+                      <a href={service.href} className="block px-4 py-2 hover:bg-gray-100">
+                        {service.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
             <a href="/tracking" className="text-gray-700 hover:text-logistics-blue transition-colors font-medium">
               Tracking
             </a>

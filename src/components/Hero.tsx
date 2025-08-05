@@ -13,14 +13,13 @@ export const Hero = () => {
       <div className="container mx-auto px-4 z-10">
         <div className="max-w-2xl text-white">
           <p className="text-lg mb-4 text-logistics-blue font-semibold">
-            Tenta Logistics Solutions
+            You Buy in America, We Ship to the Middle East
           </p>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-            You Buy We Ship
+            From U.S. auctions to your driveway - we handle everything
           </h1>
           <p className="text-xl mb-8 text-gray-200 leading-relaxed">
-            We provide you with full package services, from bidding on your favorite cars 
-            in the US auctions and delivering to your desired locations worldwide.
+            Tenta Logistics helps customers across the Middle East purchase vehicles from U.S. auctions and delivers them directly to your country. We manage the entire process: bidding, paperwork, shipping, and import clearance so you don’t have to.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
