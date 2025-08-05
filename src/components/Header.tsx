@@ -42,7 +42,7 @@ export const Header = () => {
           {/* Logo */}
           <a href="/" className="text-2xl font-bold text-logistics-dark hover:opacity-80 transition-opacity cursor-pointer">
             <span className="text-logistics-blue">Tenta</span>
-            <span className="text-logistics-green">Logistics</span>
+            <span className="text-logistics-green"> Used Cars Trading LLC</span>
           </a>
 
           {/* Navigation Links */}

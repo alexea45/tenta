@@ -1,7 +1,13 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import cmaCgmLogo from "../assets/cma-cgm-logo.png";
 
 const carriers = [
+  {
+    name: 'CMA CGM',
+    logo: cmaCgmLogo,
+    url: 'https://www.cma-cgm.com/ebusiness/tracking',
+  },
   {
     name: 'MSC',
     logo: 'https://upload.wikimedia.org/wikipedia/commons/b/b3/Mediterranean_Shipping_Company_logo.svg',

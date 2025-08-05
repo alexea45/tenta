@@ -1,5 +1,8 @@
+import cmaCgmLogo from "../assets/cma-cgm-logo.png";
+
 export const TrustedPartners = () => {
   const partners = [
+    { name: "CMA CGM", logo: cmaCgmLogo, href: "https://www.cma-cgm.com/" },
     { name: "ONE", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Ocean_Network_Express_logo.svg/1200px-Ocean_Network_Express_logo.svg.png", href: "https://www.one-line.com/en" },
     { name: "MSC", logo: "https://upload.wikimedia.org/wikipedia/commons/b/b3/Mediterranean_Shipping_Company_logo.svg", href: "https://www.msc.com/" },
     { name: "HMM", logo: "https://upload.wikimedia.org/wikipedia/commons/5/56/HMM_Logo_Basic_Form.svg", href: "https://www.hmm21.com/" },
@@ -11,6 +14,8 @@ export const TrustedPartners = () => {
     { name: "Manheim", logo: "https://www.coxautoinc.com/wp-content/uploads/2017/07/Manheim-COLOR-Icon-with-CAI-BLACK-RGB-720x160-b81732b1-7422-4916-8d99-14239bc20107.png", href: "https://www.manheim.com/" },
     { name: "AutoNation", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/AutoNation_logo.svg/1280px-AutoNation_logo.svg.png", href: "https://www.autonation.com/" },
     { name: "CarMax", logo: "https://upload.wikimedia.org/wikipedia/commons/6/60/Carmaxlogo2021.png", href: "https://www.carmax.com/" },
+    { name: "Ritchie Bros.", logo: "https://help.ritchiebros.com/wp-content/uploads/2022/12/RBA-copy-SMALL.png", href: "https://www.rbauction.com/" },
+    { name: "IronPlanet", logo: "https://cranenetworknews.com/wp-content/uploads/2016/05/s3-29179-IronPlanetlogo.jpg", href: "https://www.ironplanet.com/" },
   ];
 
   return (

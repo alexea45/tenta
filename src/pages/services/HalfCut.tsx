@@ -16,7 +16,10 @@ const HalfCut = () => {
       "Body disassembly",
       "Export preparation",
     ],
-    image: "https://carpart.com.au/uploads/blog/354299/half-cut-cars-1671004607.jpeg",
+    images: [
+      "https://i.imgur.com/F4jkAHw.jpeg",
+      "https://i.imgur.com/A3U6NCF.jpeg"
+    ],
     imageAlt: "Half-Cut Services",
     ctaTitle: "Ready to Go Half-Cut?",
     ctaSubtitle: "Book dismantling and save on your next shipment.",

@@ -16,7 +16,7 @@ interface ServicePageLayoutProps {
   sectionTitle: string;
   sectionParagraphs: string[];
   features: string[];
-  image: string;
+  images: string[]; // Changed from image: string
   imageAlt: string;
   ctaTitle: string;
   ctaSubtitle: string;
@@ -30,7 +30,7 @@ export const ServicePageLayout = ({
   sectionTitle,
   sectionParagraphs,
   features,
-  image,
+  images, // Changed from image
   imageAlt,
   ctaTitle,
   ctaSubtitle,
@@ -73,12 +73,15 @@ export const ServicePageLayout = ({
                 ))}
               </ul>
             </div>
-            <div>
-              <img 
-                src={image}
-                alt={imageAlt}
-                className="rounded-lg shadow-lg"
-              />
+            <div className="grid grid-cols-2 gap-4 items-center">
+              {images.map((image, index) => (
+                <img
+                  key={index}
+                  src={image}
+                  alt={`${imageAlt} ${index + 1}`}
+                  className="rounded-lg shadow-lg w-full h-auto object-cover"
+                />
+              ))}
             </div>
           </div>
           {logos && (
