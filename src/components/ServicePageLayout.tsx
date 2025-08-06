@@ -9,6 +9,19 @@ interface Logo {
   href: string;
 }
 
+interface CustomSectionItem {
+  icon: LucideIcon;
+  title: string;
+  description: string;
+  features: string[];
+}
+
+interface CustomSection {
+  title: string;
+  subtitle: string;
+  items: CustomSectionItem[];
+}
+
 interface ServicePageLayoutProps {
   icon: LucideIcon;
   heroTitle: string;
@@ -21,6 +34,7 @@ interface ServicePageLayoutProps {
   ctaTitle: string;
   ctaSubtitle: string;
   logos?: Logo[];
+  customSections?: CustomSection[];
 }
 
 export const ServicePageLayout = ({
@@ -35,6 +49,7 @@ export const ServicePageLayout = ({
   ctaTitle,
   ctaSubtitle,
   logos,
+  customSections,
 }: ServicePageLayoutProps) => {
   return (
     <div className="min-h-screen">
@@ -100,6 +115,48 @@ export const ServicePageLayout = ({
           )}
         </div>
       </section>
+
+      {/* Custom Sections */}
+      {customSections && customSections.map((section, sectionIndex) => (
+        <section key={sectionIndex} className="py-20 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl font-bold text-logistics-dark mb-4">
+                {section.title}
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                {section.subtitle}
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {section.items.map((item, itemIndex) => {
+                const ItemIcon = item.icon;
+                return (
+                  <div key={itemIndex} className="bg-white rounded-lg p-6 shadow-lg">
+                    <div className="text-center mb-6">
+                      <ItemIcon className="h-12 w-12 mx-auto mb-4 text-logistics-blue" />
+                      <h3 className="text-xl font-bold text-logistics-dark mb-2">
+                        {item.title}
+                      </h3>
+                      <p className="text-gray-600">
+                        {item.description}
+                      </p>
+                    </div>
+                    <ul className="space-y-2">
+                      {item.features.map((feature, featureIndex) => (
+                        <li key={featureIndex} className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-logistics-green flex-shrink-0" />
+                          <span className="text-sm text-gray-700">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      ))}
 
       {/* CTA Section */}
       <section className="py-20 bg-gray-50">

@@ -124,7 +124,7 @@ const Services = () => {
     },
     {
       icon: Scissors,
-      title: "Half-Cut Services",
+      title: "Dismantling Services",
       description:
         "We dismantle vehicles professionally to ship them as parts and save on import taxes.",
       features: ["Engine separation", "Body disassembly", "Export prep"],

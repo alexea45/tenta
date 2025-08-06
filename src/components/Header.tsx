@@ -8,7 +8,7 @@ const services = [
   { name: "Shipping Services", href: "/services/shipping" },
   { name: "Clearance Services", href: "/services/clearance" },
   { name: "Booking Services", href: "/services/booking" },
-  { name: "Half-Cut Services", href: "/services/half-cut" },
+  { name: "Dismantling Services", href: "/services/half-cut" },
   { name: "Title Services", href: "/services/title" },
   { name: "Bidding Services", href: "/services/bidding" },
 ];
