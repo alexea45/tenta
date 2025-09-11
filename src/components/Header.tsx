@@ -72,6 +72,14 @@ export const Header = () => {
             <a href="/contact" className="text-gray-700 hover:text-logistics-blue transition-colors font-medium">
               Contact Us
             </a>
+            <a 
+              href="http://144.48.111.94:9576/app/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-logistics-blue text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors font-medium"
+            >
+              Login
+            </a>
           </div>
 
           {/* Mobile menu button */}
