@@ -80,7 +80,7 @@ export const Header = () => {
               Contact Us
             </a>
             <a 
-              href="http://144.48.111.94:9576/app/" 
+              href="https://tenta.rahmansoft.com" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-logistics-blue text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors font-medium"
@@ -149,7 +149,7 @@ export const Header = () => {
                 {/* Login button for mobile */}
                 <div className="px-4 pt-2">
                   <a 
-                    href="http://144.48.111.94:9576/app/" 
+                    href="https://tenta.rahmansoft.com" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="block w-full text-center bg-logistics-blue text-white px-4 py-3 rounded-md hover:bg-blue-700 transition-colors font-medium"
