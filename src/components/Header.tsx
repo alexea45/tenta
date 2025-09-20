@@ -22,7 +22,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="w-full">
+    <header className="w-full relative">
       {/* Top contact bar */}
       <div className="bg-logistics-dark text-white py-2 px-4">
         <div className="container mx-auto flex flex-wrap justify-between items-center text-sm">
@@ -44,7 +44,7 @@ export const Header = () => {
       </div>
 
       {/* Main navigation */}
-      <nav className="bg-white shadow-md py-4 px-4">
+      <nav className="bg-white shadow-md py-4 px-4 relative z-50">
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo */}
           <a href="/" className="text-2xl font-bold text-logistics-dark hover:opacity-80 transition-opacity cursor-pointer">
@@ -100,7 +100,8 @@ export const Header = () => {
         {/* Mobile Menu Overlay */}
         {isMobileMenuOpen && (
           <div 
-            className="md:hidden absolute top-full left-0 w-full bg-white border-t shadow-lg z-50"
+            className="md:hidden absolute top-full left-0 w-full bg-white border-t shadow-xl z-[99999]"
+            style={{ boxShadow: '0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)' }}
             onClick={(e) => e.stopPropagation()}
           >
             <div className="container mx-auto py-4">
