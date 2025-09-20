@@ -89,8 +89,16 @@ export const Header = () => {
             </a>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
+          {/* Mobile menu and login buttons */}
+          <div className="md:hidden flex items-center gap-2">
+            <a 
+              href="https://tenta.rahmansoft.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-logistics-blue text-white px-3 py-1.5 rounded text-sm font-medium hover:bg-blue-700 transition-colors"
+            >
+              Login
+            </a>
             <Button variant="ghost" size="sm" onClick={toggleMobileMenu}>
               {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
             </Button>
