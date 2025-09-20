@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Phone, Mail, Globe } from "lucide-react";
+import { Phone, Mail, Globe, Menu, X } from "lucide-react";
+import { useState } from "react";
 
 const services = [
   { name: "Auction Account Services", href: "/services/auction-account" },
@@ -14,6 +15,12 @@ const services = [
 ];
 
 export const Header = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <header className="w-full">
       {/* Top contact bar */}
@@ -84,11 +91,76 @@ export const Header = () => {
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <Button variant="ghost" size="sm">
-              Menu
+            <Button variant="ghost" size="sm" onClick={toggleMobileMenu}>
+              {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
             </Button>
           </div>
         </div>
+
+        {/* Mobile Menu Overlay */}
+        {isMobileMenuOpen && (
+          <div 
+            className="md:hidden absolute top-full left-0 w-full bg-white border-t shadow-lg z-50"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="container mx-auto py-4">
+              <div className="flex flex-col space-y-4">
+                {/* Services dropdown for mobile */}
+                <div className="px-4">
+                  <div className="text-gray-700 font-medium mb-2">Services</div>
+                  <div className="pl-4 space-y-2">
+                    {services.map((service) => (
+                      <a 
+                        key={service.name}
+                        href={service.href} 
+                        className="block text-sm text-gray-600 hover:text-logistics-blue transition-colors py-1"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                      >
+                        {service.name}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+                
+                {/* Other navigation links */}
+                <a 
+                  href="/tracking" 
+                  className="px-4 py-2 text-gray-700 hover:text-logistics-blue transition-colors font-medium"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Tracking
+                </a>
+                <a 
+                  href="/calculate" 
+                  className="px-4 py-2 text-gray-700 hover:text-logistics-blue transition-colors font-medium"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Calculate Shipping
+                </a>
+                <a 
+                  href="/contact" 
+                  className="px-4 py-2 text-gray-700 hover:text-logistics-blue transition-colors font-medium"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Contact Us
+                </a>
+                
+                {/* Login button for mobile */}
+                <div className="px-4 pt-2">
+                  <a 
+                    href="http://144.48.111.94:9576/app/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="block w-full text-center bg-logistics-blue text-white px-4 py-3 rounded-md hover:bg-blue-700 transition-colors font-medium"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Login
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </nav>
     </header>
   );
