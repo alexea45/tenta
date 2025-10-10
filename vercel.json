@@ -1,9 +1,8 @@
 {
-  "redirects": [
+  "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "https://www.tentausedcarstr.com/$1",
-      "permanent": true
+      "destination": "/index.html"
     }
   ]
 }
