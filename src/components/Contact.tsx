@@ -84,8 +84,8 @@ export const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-logistics-dark mb-2">Address</h3>
-                    <p className="text-gray-600">855 Alpha St.</p>
-                    <p className="text-gray-600">Irwindale, CA 91010</p>
+                    <p className="text-gray-600">719 Union Street</p>
+                    <p className="text-gray-600">Montebello, CA 90640</p>
                   </div>
                 </div>
               </CardContent>
