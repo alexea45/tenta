@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 
 export const Contact = () => {
   return (
@@ -54,8 +54,8 @@ export const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-logistics-dark mb-2">Phone</h3>
-                    <p className="text-gray-600">+1 (626) 600 - 8699 (USA)</p>
-                    <p className="text-gray-600">0547818558 (UAE)</p>
+                    <p className="text-gray-600">+971 54781 8558 (UAE Mobile)</p>
+                    <p className="text-gray-600">+971 43325526 (UAE Landline)</p>
                   </div>
                 </div>
               </CardContent>
@@ -71,6 +71,22 @@ export const Contact = () => {
                     <h3 className="text-lg font-semibold text-logistics-dark mb-2">Email</h3>
                     <p className="text-gray-600">info@tentallc.com</p>
                     <p className="text-gray-600">support@tentallc.com</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white shadow-card border-0">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-4">
+                  <div className="bg-green-500 p-3 rounded-full">
+                    <MessageCircle className="h-6 w-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-logistics-dark mb-2">WhatsApp</h3>
+                    <a href="https://wa.me/971547818558" className="text-gray-600 hover:text-logistics-blue transition-colors">
+                      +971 54781 8558
+                    </a>
                   </div>
                 </div>
               </CardContent>

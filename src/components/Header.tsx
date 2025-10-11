@@ -27,9 +27,9 @@ export const Header = () => {
       <div className="bg-logistics-dark text-white py-2 px-4">
         <div className="container mx-auto flex flex-wrap justify-between items-center text-sm">
           <div className="flex items-center gap-6">
-            <a href="tel:+16266008699" className="flex items-center gap-2 hover:text-logistics-blue transition-colors">
+            <a href="tel:+971547818558" className="flex items-center gap-2 hover:text-logistics-blue transition-colors">
               <Phone size={16} />
-              +1 (626) 600-8699
+              +971 54781 8558
             </a>
             <a href="mailto:info@tentallc.com" className="flex items-center gap-2 hover:text-logistics-blue transition-colors">
               <Mail size={16} />
