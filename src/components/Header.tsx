@@ -29,7 +29,7 @@ export const Header = () => {
           <div className="flex items-center gap-6">
             <a href="tel:+971547818558" className="flex items-center gap-2 hover:text-logistics-blue transition-colors">
               <Phone size={16} />
-              +971 54781 8558
+              +971 54781 8558 (UAE Mobile)
             </a>
             <a href="mailto:info@tentallc.com" className="flex items-center gap-2 hover:text-logistics-blue transition-colors">
               <Mail size={16} />
